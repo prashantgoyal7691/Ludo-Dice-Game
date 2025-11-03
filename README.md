@@ -6,8 +6,7 @@ This project simulates the rolling of a dice — perfect for beginners to unders
 ---
 
 ## 🚀 Live Demo
-👉 [Play Now](https://your-netlify-link.netlify.app)  
-*(Replace with your Netlify or GitHub Pages link)*
+👉 [Play Now](https://ludodice-game.netlify.app/) 
 
 ---
 
