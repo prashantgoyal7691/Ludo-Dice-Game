@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background: #fff; color:#111; min-height:100vh; }
+.container { max-width:1120px; margin:0 auto; padding:40px; }
+
+/* Start Screen */
+.start-screen { height:90vh; display:flex; gap:40px; align-items:center; justify-content:center; }
+.start-image { width:220px; height:220px; object-fit:contain; }
+.start-content h1 { font-size:64px; white-space:nowrap; margin-bottom:20px; }
+.btn { padding:10px 18px; border-radius:6px; min-width:180px; font-size:16px; cursor:pointer; border:1px solid transparent; }
+.btn.primary { background:#000; color:#fff; }
+.btn.primary:hover { background:#fff; color:#000; border:1px solid #000; }
+.btn.outline { background:#fff; color:#000; border:1px solid #000; }
+.btn.outline:hover { background:#000; color:#fff; border:1px solid transparent; }
+
+/* Game screen */
+.hidden { display:none; }
+.top-section { display:flex; justify-content:space-around; align-items:flex-end; gap:20px; flex-wrap:wrap; }
+.score-card { max-width:200px; text-align:center; }
+.score-card h1 { font-size:100px; line-height:100px; }
+.score-card p { font-size:24px; font-weight:600; }
+
+.number-selector { display:flex; flex-direction:column; align-items:flex-end; }
+.numbers { display:flex; gap:18px; margin-bottom:8px; }
+.number-box { height:72px; width:72px; border:1px solid #000; display:grid; place-items:center; font-size:24px; font-weight:700; cursor:pointer; background:#fff; color:#000; user-select:none; border-radius:6px; }
+.number-box.selected { background:#000; color:#fff; }
+
+.error { color:red; height:20px; margin-bottom:6px; }
+
+/* Dice */
+.dice-area { margin-top:48px; text-align:center; }
+.dice { display:inline-block; cursor:pointer; padding:8px; border-radius:12px; }
+.dice img { width:140px; height:140px; object-fit:contain; }
+
+/* Controls */
+.controls { margin-top:40px; display:flex; gap:10px; flex-direction:column; align-items:center; justify-content:center; }
+
+/* Rules */
+.rules { max-width:800px; margin:40px auto; background:#fbf1f1; padding:20px; border-radius:10px; }
+.rules h2 { font-size:24px; margin-bottom:8px; }
+.rules .text p { margin:6px 0; }
+
+/* Responsive */
+@media (max-width:700px) {
+  .start-content h1 { font-size:36px; }
+  .score-card h1 { font-size:64px; line-height:64px; }
+  .numbers { gap:8px; }
+}

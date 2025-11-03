@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dice Game (Ludo Lite)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section id="start-screen" class="start-screen">
+      <img src="images/dice_1.png" alt="dice" class="start-image" onerror="this.onerror=null;"/>
+      <div class="start-content">
+        <h1>Dice Game</h1>
+        <button id="play-btn" class="btn primary">Play Now</button>
+      </div>
+    </section>
+
+    <section id="game-screen" class="hidden">
+      <div class="top-section">
+        <div class="score-card">
+          <h1 id="score">0</h1>
+          <p>Total Score</p>
+        </div>
+
+        <div class="number-selector">
+          <p id="error" class="error"></p>
+          <div class="numbers" id="numbers"></div>
+          <p class="label">Select Number</p>
+        </div>
+      </div>
+
+      <div class="dice-area">
+        <div id="dice" class="dice" title="Click to roll">
+          <img id="dice-img" src="images/dice_1.png" alt="dice" onerror="this.onerror=null; this.src='images/dice_1.svg'"/>
+        </div>
+        <p>Click on Dice to roll</p>
+      </div>
+
+      <div class="controls">
+        <button id="reset-btn" class="btn outline">Reset Score</button>
+        <button id="rules-btn" class="btn primary">Show Rules</button>
+      </div>
+
+      <section id="rules" class="rules hidden">
+        <h2>How to play dice game</h2>
+        <div class="text">
+          <p>Select any number (1–6).</p>
+          <p>Click on dice image to roll.</p>
+          <p>If your selected number equals the dice number you gain that many points.</p>
+          <p>If your guess is wrong you lose 2 points.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
